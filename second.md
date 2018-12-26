@@ -116,8 +116,13 @@ $ git push -u origin master
 ### 코스피 정보 가져오기
 
 Beautiful Soup library 설치 [doc]
+```
 $ pip install bs4
+```
+
 Beautiful Soup 체험해보기
+
+```python
 from bs4 import BeautifulSoup
 url = 'https://www.google.co.kr/'
 html_doc = requests.get(url).text
@@ -147,3 +152,4 @@ msg_url = f'https://api.telegram.org/bot{token}/{method_name}?chat_id={chat_id}&
 
 print(msg_url)
 print(requests.get(msg_url))
+```
