@@ -1,6 +1,4 @@
-# My Favorite Team
-
-### 5. git
+### git
 
 ### [git](https://git-scm.com/book/ko/v1/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
@@ -113,5 +111,3 @@ $ git push -u origin master
 - git 학습 사이트
   - [git 입문](https://backlog.com/git-tutorial/kr/intro/intro1_1.html)
   - [git 간편안내서](https://rogerdudler.github.io/git-guide/index.ko.html)
-
-# chat bot
