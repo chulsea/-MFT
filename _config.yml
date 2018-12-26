@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "MFT"
 name                     : "chulsea"
 description              : "An amazing website."
-url                      : "https://chulsea.github.io/MFT"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/blog"
+url                      : "https://chulsea.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "MFT"
 
 # Reading Files
 include:
