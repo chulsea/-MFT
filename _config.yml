@@ -20,7 +20,7 @@ title                    : "MFT"
 name                     : "chulsea"
 description              : "An amazing website."
 url                      : "https://chulsea.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "MFT"
+baseurl                  : "/MFT"
 
 # Reading Files
 include:
