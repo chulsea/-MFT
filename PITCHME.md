@@ -59,7 +59,7 @@
 
 ---
 
-![ssafy 첫날사진](ssafy1.jpeg)
+![ssafy 첫날사진](ssafy.jpg)
 
 ---
 
