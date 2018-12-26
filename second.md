@@ -111,3 +111,39 @@ $ git push -u origin master
 - git 학습 사이트
   - [git 입문](https://backlog.com/git-tutorial/kr/intro/intro1_1.html)
   - [git 간편안내서](https://rogerdudler.github.io/git-guide/index.ko.html)
+  
+#### 웹 크롤링
+### 코스피 정보 가져오기
+
+Beautiful Soup library 설치 [doc]
+$ pip install bs4
+Beautiful Soup 체험해보기
+from bs4 import BeautifulSoup
+url = 'https://www.google.co.kr/'
+html_doc = requests.get(url).text
+soup = BeautifulSoup(html_doc, 'html.parser')
+
+print(soup.prettify())
+코스피 가져오기
+import requests
+from bs4 import BeautifulSoup
+import os
+
+token = os.getenv("TELEGRAM_BOT_TOKEN")
+method_name = "getUpdates"
+url = f'https://api.telegram.org/bot{token}/{method_name}'
+update = requests.get(url).json()
+
+
+chat_id = update["result"][0]["message"]["from"]["id"]
+method_name = "sendmessage"
+
+url_cos = "https://finance.naver.com/sise/"
+html_cos = requests.get(url_cos).text
+soup = BeautifulSoup(html_cos, 'html.parser')
+select = soup.select_one('#KOSPI_now') 
+msg = "코스피: " + select.text
+msg_url = f'https://api.telegram.org/bot{token}/{method_name}?chat_id={chat_id}&text={msg}'
+
+print(msg_url)
+print(requests.get(msg_url))
