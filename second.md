@@ -129,7 +129,9 @@ html_doc = requests.get(url).text
 soup = BeautifulSoup(html_doc, 'html.parser')
 
 print(soup.prettify())
-코스피 가져오기
+```
+# 코스피 가져오기
+```python
 import requests
 from bs4 import BeautifulSoup
 import os
